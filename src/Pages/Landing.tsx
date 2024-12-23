@@ -9,7 +9,6 @@ import SocialMediaHero from '../components/Hero';
 import HowItWorks2 from '../components/HowitWork2';
 import HowItWorks from '../components/HowItWorks';
 import Nav from '../components/Nav';
-import PricingPlans from '../components/Pricing';
 import TestimonialSection from '../components/Testimonial';
 import { FaRegMessage } from 'react-icons/fa6';
 import ContactUs from '../components/Contact';
@@ -55,7 +54,6 @@ function Landing() {
             <FeatureSection/>
             <HowItWorks2/>
             <TestimonialSection/>
-            <PricingPlans/>
             <About/>
             <Blog/>
             <FAQ/>
