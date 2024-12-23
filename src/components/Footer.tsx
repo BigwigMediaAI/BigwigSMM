@@ -20,13 +20,15 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {/* Branding Section */}
           <div className="space-y-4">
-            <span className="text-red-500 text-2xl font-bold">B</span>
-            <span className="text-blue-500 text-2xl font-bold">i</span>
-            <span className="text-yellow-500 text-2xl font-bold">g</span>
-            <span className="text-green-500 text-2xl font-bold">w</span>
-            <span className="text-purple-500 text-2xl font-bold">i</span>
-            <span className="text-pink-500 text-2xl font-bold">g</span>
-            <span className="text-teal-500 text-2xl font-bold">SMM</span>
+          <span className="text-red-500 text-2xl font-bold">H</span>
+        <span className="text-blue-500 text-2xl font-bold">a</span>
+        <span className="text-yellow-500 text-2xl font-bold">n</span>
+        <span className="text-green-500 text-2xl font-bold">d</span>
+        <span className="text-purple-500 text-2xl font-bold">l</span>
+        <span className="text-orange-500 text-2xl font-bold">e</span>
+        <span className="text-indigo-500 text-2xl font-bold">e</span>
+        <span className="text-pink-500 text-2xl font-bold">y</span>
+        <span className="text-teal-500 text-2xl font-bold">SMM</span>
             <p className="text-lg text-gray-400">
               The best place for social media management tools and insights.
               Boost your online presence effortlessly.

@@ -48,12 +48,14 @@ function Nav() {
     >
       <div className="flex items-center justify-between p-4 md:px-10 relative">
         <button className="flex items-center space-x-1 ml-5" onClick={() => handleScrollToSection('home')}>
-        <span className="text-red-500 text-2xl font-bold">B</span>
-        <span className="text-blue-500 text-2xl font-bold">i</span>
-        <span className="text-yellow-500 text-2xl font-bold">g</span>
-        <span className="text-green-500 text-2xl font-bold">w</span>
-        <span className="text-purple-500 text-2xl font-bold">i</span>
-        <span className="text-pink-500 text-2xl font-bold">g</span>
+        <span className="text-red-500 text-2xl font-bold">H</span>
+        <span className="text-blue-500 text-2xl font-bold">a</span>
+        <span className="text-yellow-500 text-2xl font-bold">n</span>
+        <span className="text-green-500 text-2xl font-bold">d</span>
+        <span className="text-purple-500 text-2xl font-bold">l</span>
+        <span className="text-orange-500 text-2xl font-bold">e</span>
+        <span className="text-indigo-500 text-2xl font-bold">e</span>
+        <span className="text-pink-500 text-2xl font-bold">y</span>
         <span className="text-teal-500 text-2xl font-bold">SMM</span>
         </button>
 

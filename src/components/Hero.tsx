@@ -16,14 +16,6 @@ const SocialMediaHero: React.FC = () => {
         <p className="text-gray-600 leading-relaxed">
 Create engaging posts in minutes, manage all your social channels seamlessly, and interact with customers – all from one powerful dashboard.
         </p>
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 items-center justify-center lg:justify-start">
-          <button className="bg-blue-600 text-white font-semibold py-3 px-6 rounded hover:bg-blue-700 transition">
-            Start 14-day Free Trial
-          </button>
-        </div>
-        <p className="text-gray-500 text-sm">
-          No CC Required | Cancel Anytime
-        </p>
       </div>
 
       {/* Right Section */}
