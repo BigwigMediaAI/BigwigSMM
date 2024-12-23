@@ -129,6 +129,12 @@ function Nav() {
           <button onClick={() => handleScrollToSection('Blog')} className="hover:text-black font-bold">
             Blog
           </button>
+          <button
+            onClick={() => window.open('/team', '_blank')}
+            className="hover:text-black font-bold"
+          >
+            Team
+          </button>
         </div>
 
         <div className="md:block hidden">
@@ -159,6 +165,12 @@ function Nav() {
           </button>
           <button onClick={() => handleScrollToSection('pricing')} className="hover:text-black">
             Pricing
+          </button>
+          <button
+            onClick={() => window.open('/team', '_blank')}
+            className="hover:text-black"
+          >
+            Team
           </button>
           <button
             onClick={() => handleScrollToSection('faq')}
