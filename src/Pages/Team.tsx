@@ -26,6 +26,7 @@ const Team: React.FC = () => {
           Elevate your social media game without even breaking a sweat with Bigwig Social, the AI-powered, social media one-stop-shop! Let's have a chat about creating sizzling content, snazzy images, trendy hashtags, jazzy emoticons and blessing your followers with perfectly timed posts across all channels! Dodging trolls and responding to comments?          </h2>
           <h2 className="text-gray-600 text-center mt-4">
           Rapidly responding to comments and deep-diving into performance analytics has never been this hilariously straightforward. And guess what? Whether you’re a quaint local business or a sprawling enterprise, we're here ready to drive your digital growth.          </h2>
+          <h2 className="text-gray-600 text-center mt-4">We’ve got your back! With an exceptional and experienced 40+ social media experts working round the clock, equipped with top-notch content creation and creative skills, we’re here to ensure your social media channels get the boost they deserve and deliver outstanding results!</h2>
           <h2 className="text-gray-600 text-center mt-4 font-bold">Our platform is the digital dynamo that's got your back.</h2>
         </div>
       </div>
