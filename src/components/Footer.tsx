@@ -86,7 +86,7 @@ function Footer() {
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
-                <button className="text-gray-400 hover:text-white">
+                <button className="text-gray-400 hover:text-white" onClick={() => handleScrollToSection("case")}>
                   Case Studies
                 </button>
               </li>
@@ -98,11 +98,7 @@ function Footer() {
                   FAQ
                 </button>
               </li>
-              <li>
-                <button className="text-gray-400 hover:text-white">
-                  Support
-                </button>
-              </li>
+              
             </ul>
           </div>
 
