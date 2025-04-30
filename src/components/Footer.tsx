@@ -8,27 +8,31 @@ import {
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
-  const handleScrollToSection = (sectionId: any) => {
+  const handleScrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const offset = 80; // Adjust for sticky navbar height
+      const sectionTop =
+        section.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top: sectionTop, behavior: "smooth" });
     }
   };
   return (
     <div className="bg-gray-800 text-white py-16">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-11/12 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {/* Branding Section */}
           <div className="space-y-4">
-          <span className="text-red-500 text-3xl font-bold">B</span>
-        <span className="text-blue-500 text-3xl font-bold">i</span>
-        <span className="text-yellow-500 text-3xl font-bold">g</span>
-        <span className="text-green-500 text-3xl font-bold">w</span>
-        <span className="text-purple-500 text-3xl font-bold">i</span>
-        <span className="text-orange-500 text-3xl font-bold">g</span>
-        <span className="text-teal-500 text-3xl font-bold">Social</span>
+            <span className="text-red-500 text-3xl font-bold">B</span>
+            <span className="text-blue-500 text-3xl font-bold">i</span>
+            <span className="text-yellow-500 text-3xl font-bold">g</span>
+            <span className="text-green-500 text-3xl font-bold">w</span>
+            <span className="text-purple-500 text-3xl font-bold">i</span>
+            <span className="text-orange-500 text-3xl font-bold">g</span>
+            <span className="text-teal-500 text-3xl font-bold">Social</span>
             <p className="text-lg text-gray-400">
-              Most preferred platform for Social Media Management and insights for Multi-Location Business.
+              Most preferred platform for Social Media Management and insights
+              for Multi-Location Business.
             </p>
           </div>
 
@@ -63,14 +67,7 @@ function Footer() {
                   About Us
                 </button>
               </li>
-              <li>
-                <button
-                  onClick={() => handleScrollToSection("pricing")}
-                  className="text-gray-400 hover:text-white"
-                >
-                  Pricing
-                </button>
-              </li>
+
               <li>
                 <button
                   onClick={() => handleScrollToSection("Blog")}
@@ -86,7 +83,10 @@ function Footer() {
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
-                <button className="text-gray-400 hover:text-white" onClick={() => handleScrollToSection("case")}>
+                <button
+                  className="text-gray-400 hover:text-white"
+                  onClick={() => handleScrollToSection("case")}
+                >
                   Case Studies
                 </button>
               </li>
@@ -98,7 +98,6 @@ function Footer() {
                   FAQ
                 </button>
               </li>
-              
             </ul>
           </div>
 
