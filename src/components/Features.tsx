@@ -75,38 +75,45 @@ function Features() {
   ];
 
   return (
-    <div id="features" className="bg-black px-4">
+    <div id="features" className="mb-10 px-4">
+      <h2 className="text-5xl font-semibold text-white text-center mb-10 tracking-tight">
+        Our Services
+      </h2>
       <div className="overflow-x-hidden">
-        <h2 className="text-5xl font-bold text-white text-center mb-10 tracking-tight">
-          Our Services
-        </h2>
         {featureData.map((feature, index) => (
           <div
-            key={feature.id}
-            className={`w-11/12 mx-auto flex flex-col md:flex-row ${
-              index % 2 !== 0 ? "md:flex-row-reverse" : ""
-            } items-center gap-10 mb-10`}
+            key={index}
+            id={feature.id}
+            className={`md:w-11/12 mx-auto md:flex justify-between grid grid-cols-1 md:grid-cols-3 items-center gap-8 mt-${
+              index === 0 ? 0 : 16
+            }`}
           >
             {/* Text Section */}
             <div
-              className="w-full md:w-1/2"
+              className={`col-span-1 md:w-1/2 ${
+                index % 2 === 0 ? "" : "md:col-start-3 order-1 md:order-2"
+              }`}
               data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             >
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-white leading-tight">
                 {feature.title}
-              </h3>
-              <p className="text-lg text-gray-300">{feature.description}</p>
+              </h2>
+              <p className="text-lg text-gray-300 mt-4">
+                {feature.description}
+              </p>
             </div>
 
             {/* Image Section */}
             <div
-              className="w-full md:w-1/2"
+              className={`col-span-2 md:w-1/2 flex justify-center ${
+                index % 2 === 0 ? "" : "md:col-start-1 order-2 md:order-1"
+              }`}
               data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
             >
               <img
                 src={feature.imageUrl}
                 alt={feature.title}
-                className="w-full h-auto rounded-lg object-cover"
+                className="w-full md:max-w-lg object-cover rounded-lg"
               />
             </div>
           </div>
