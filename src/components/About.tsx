@@ -1,18 +1,32 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import about from "../assets/ABOUT (1).png";
 import ContactUs from "./Contact";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutUs = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <section id="about" className=" px-8 md:px-14 lg:px-20 mb-16 md:py-5">
-      <h2 className="text-5xl font-bold text-white mb-10 text-center">
+      <h2 className="text-5xl font-bold text-white mb-6 md:mb-10 text-center">
         About Us
       </h2>
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div
+        className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+        data-aos="fade-up"
+      >
         {/* Text Content */}
         <div>
           <p className="text-md text-justify text-gray-300 mt-4 md:text-md">

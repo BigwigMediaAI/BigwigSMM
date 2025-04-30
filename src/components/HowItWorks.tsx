@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMapMarkerAlt,
@@ -7,8 +7,18 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function HowItWorks() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   const steps = [
     {
       title: "AI powered",
@@ -44,8 +54,8 @@ function HowItWorks() {
 
   return (
     <div className="py-16 bg-black">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl font-semibold text-center text-white mb-12">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12">
           The #1 AI social platform for multi-location brands
         </h2>
 
@@ -81,7 +91,11 @@ function HowItWorks() {
         {/* Desktop View: Grid of all steps */}
         <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {steps.map((step, index) => (
-            <div key={index} className="relative rounded-lg p-6 bg-gray-800">
+            <div
+              key={index}
+              className="relative rounded-lg p-6 bg-gray-800"
+              data-aos="zoom-in"
+            >
               <div className="flex items-center space-x-4">
                 {step.icon}
                 <h3 className="text-xl md:text-lg font-semibold text-white">

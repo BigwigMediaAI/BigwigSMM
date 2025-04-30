@@ -72,7 +72,7 @@ const TestimonialSection: React.FC = () => {
         </h2>
         <div className="flex flex-col md:flex-row items-center gap-6 mt-5">
           <div className="md:w-1/4 text-center md:text-left">
-            <h2 className="text-5xl md:text-2xl font-bold md:font-semibold text-gray-100">
+            <h2 className="text-4xl md:text-2xl font-bold md:font-semibold text-gray-100">
               CLIENT TESTIMONIALS
             </h2>
             <div className="flex items-center gap-2 mt-2 justify-center md:justify-start">

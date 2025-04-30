@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import social from "../assets/Handleey-Social-Media-Post.webp";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SocialMediaHero: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <section
       id="home"
-      className="md:w-11/12 mx-auto relative  flex flex-col lg:flex-row items-center justify-between py-12 px-4  mt-16"
+      className="md:w-11/12 mx-auto relative  flex flex-col lg:flex-row items-center justify-between pt-10 px-4  mt-14"
+      data-aos="fade-up"
     >
       {/* Left Section */}
       <div className="max-w-lg space-y-6 text-center lg:text-left">

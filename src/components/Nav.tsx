@@ -171,7 +171,7 @@ function Nav() {
       )}
 
       {isOpen && (
-        <div className="absolute top-16 right-0 bg-white shadow-lg rounded-md p-4 flex flex-col space-y-4 z-50 h-[35vh] w-full max-w-md">
+        <div className="absolute top-16 right-0 bg-white shadow-lg rounded-md p-4 flex flex-col space-y-4 z-50 h-[40vh] w-full max-w-md">
           <button
             onClick={() => handleScrollToSection("home")}
             className="hover:text-gray-300"
